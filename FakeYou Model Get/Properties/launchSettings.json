@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FakeYou Model Get": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\thoma\\debug\\FakeYoumodelinfo"
+    }
+  }
+}

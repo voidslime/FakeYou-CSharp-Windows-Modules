@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakeYou Model Get", "C:\Users\thoma\source\repos\fakeyou modules\FakeYou Model Get\FakeYou Model Get.csproj", "{623EF174-4F21-4C5B-8381-A54AEA8F0977}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakeYou Model Blacklist", "C:\Users\thoma\source\repos\fakeyou modules\FakeYou Model Blacklist\FakeYou Model Blacklist.csproj", "{3A413B1E-3CFE-4DCC-B1DC-D9FE62A50D25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakeYou Post TTS Request", "C:\Users\thoma\source\repos\fakeyou modules\FakeYou Post TTS Request\FakeYou Post TTS Request.csproj", "{4AC83408-BAB6-4B5C-A7F7-40B7EFD909E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{623EF174-4F21-4C5B-8381-A54AEA8F0977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623EF174-4F21-4C5B-8381-A54AEA8F0977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623EF174-4F21-4C5B-8381-A54AEA8F0977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623EF174-4F21-4C5B-8381-A54AEA8F0977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A413B1E-3CFE-4DCC-B1DC-D9FE62A50D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A413B1E-3CFE-4DCC-B1DC-D9FE62A50D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A413B1E-3CFE-4DCC-B1DC-D9FE62A50D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A413B1E-3CFE-4DCC-B1DC-D9FE62A50D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC83408-BAB6-4B5C-A7F7-40B7EFD909E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC83408-BAB6-4B5C-A7F7-40B7EFD909E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC83408-BAB6-4B5C-A7F7-40B7EFD909E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC83408-BAB6-4B5C-A7F7-40B7EFD909E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8F06149-5733-4C2E-8DA2-22095555B20D}
+	EndGlobalSection
+EndGlobal
