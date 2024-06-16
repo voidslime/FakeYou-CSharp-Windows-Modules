@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakeYou Model Get", "C:\Users\thoma\source\repos\fakeyou modules\FakeYou Model Get\FakeYou Model Get.csproj", "{623EF174-4F21-4C5B-8381-A54AEA8F0977}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakeYou Model Blacklist", "C:\Users\thoma\source\repos\fakeyou modules\FakeYou Model Blacklist\FakeYou Model Blacklist.csproj", "{3A413B1E-3CFE-4DCC-B1DC-D9FE62A50D25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Streamerbot Actions", "FakeYou Model Blacklist\Streamerbot Actions.csproj", "{3A413B1E-3CFE-4DCC-B1DC-D9FE62A50D25}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakeYou Post TTS Request", "C:\Users\thoma\source\repos\fakeyou modules\FakeYou Post TTS Request\FakeYou Post TTS Request.csproj", "{4AC83408-BAB6-4B5C-A7F7-40B7EFD909E8}"
 EndProject

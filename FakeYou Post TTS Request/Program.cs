@@ -30,12 +30,13 @@ try
         poll = await PollTTSRequestStatus(ReqM);
     }
 
-    Debug.WriteLine(poll.maybe_public_bucket_wav_audio_path);
+    //Debug.WriteLine(poll.maybe_public_bucket_wav_audio_path);
     byte[] bytes = await StreamTTSAudioClip(m_cdn + poll.maybe_public_bucket_wav_audio_path);
     System.IO.File.WriteAllBytes(outputPath, bytes);
-    Debug.WriteLine("recieved clip");
-
+    //Debug.WriteLine("recieved clip");
+    
     int deviceId = -1;
+ /*
     const string pat = @"CABLE-B";
     for (int n = -1; n < WaveOut.DeviceCount; n++)
     {
@@ -47,6 +48,7 @@ try
             break;
         }
     }
+ */
     WaveOutEvent waveOutEvent = new()
     {
         DeviceNumber = deviceId
@@ -91,14 +93,14 @@ static async Task<TTSPollStatus> PollTTSRequestStatus(string jobToken)
     //client.Headers.Add("Authorization:SAPI:YOUR_API_KEY_OPTIONAL");
     string reply = await client.GetStringAsync("https://api.fakeyou.com/tts/job/" + jobToken);
     TTSStatusResponse ReturnValue = JsonSerializer.Deserialize<TTSStatusResponse>(reply);
-    if ((bool)ReturnValue.success != true)
+    if (ReturnValue.success != true)
     {
         retval.status = "Failed";
         return retval;
     }
     var state = ReturnValue.state;
-    retval.status = (string)state.status;
-    retval.maybe_public_bucket_wav_audio_path = (string)state.maybe_public_bucket_wav_audio_path;
+    retval.status = state.status;
+    retval.maybe_public_bucket_wav_audio_path = state.maybe_public_bucket_wav_audio_path;
     return retval;
 }
 static async Task<byte[]> StreamTTSAudioClip(string uri)

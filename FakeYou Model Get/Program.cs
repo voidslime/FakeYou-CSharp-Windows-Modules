@@ -33,11 +33,16 @@ try
             {
                 i++;
                 retstring += modeltoken + ";";
-                retstring += item.title + ";";
-                retstring += Environment.NewLine;
+                retstring += item.title + Environment.NewLine;
+                /*
+                 * Because model titles can have ';' or any character in their name, use
+                 * int i = modelInfo.IndexOf(';'); //to get the first occurence
+                 * string modelToken = modelInfo.Substring(0,i);
+                 * string modelName = modelInfo.Substring(i);
+                 */
             }
         }
-        File.WriteAllText(Path.Combine(mpath, "all.txt"), retstring);
+        File.WriteAllText(Path.Combine(mpath, "all.txt"), retstring.Trim());
     }
     else { throw new Exception(); }
 }
@@ -45,11 +50,24 @@ catch { Console.WriteLine("GET request from URI https://api.fakeyou.com/tts/list
 
 public class ModelListResponse
 {
-    public bool success {  get; set; }
+    public bool success { get; set; }
     public Model[] models { get; set; }
 }
 public class Model
 {
     public string model_token { get; set; }
     public string title { get; set; }
+    //public string ietf_language_tag { get; set; }
+    //public string ietf_primary_language_subtag { get; set; }
+    //public string tts_model_type { get; set; }
+    //public string created_at { get; set; }
+    //public string updated_at { get; set; }
+    //public string creator_user_token { get; set; }
+    //public string creator_username { get; set; }
+    //public string creator_display_name { get; set; }
+    //public string creator_gravatar_hash { get; set; }
+    //public bool is_front_page_feaured { get; set; }
+    //public bool is_twitch_featured { get; set; }
+    //public string[] category_tokens { get; set; }
+    //public string? maybe_suggested_unique_bot_command { get; set; }
 }
